@@ -1,0 +1,127 @@
+{
+  "formatVersion": "1.0",
+  "component": {
+    "group": "test",
+    "module": "first",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "5.6.2",
+      "buildId": "76qttjrt25fq7ca33rfi4t4p5a"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "first-1.0.jar",
+          "url": "first-1.0.jar",
+          "size": 261,
+          "sha1": "b2e2a5ade8ca0ccf62b91689aa330e005ac7304f",
+          "md5": "1bf2781120692d105cf47593315f18e"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "first-1.0.jar",
+          "url": "first-1.0.jar",
+          "size": 261,
+          "sha1": "b2e2a5ade8ca0ccf62b91689aa330e005ac7304f",
+          "md5": "1bf2781120692d105cf47593315f18e"
+        }
+      ]
+    },
+    {
+      "name": "testFixturesApiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "test",
+          "module": "first",
+          "version": {
+            "requires": "1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "first-1.0-test-fixtures.jar",
+          "url": "first-1.0-test-fixtures.jar",
+          "size": 538,
+          "sha1": "d8b5a0fc88274e6c83b12bcc02d4b60ee186879b",
+          "md5": "4191fe48b25cb2b3b4fa7030e1551694"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "test",
+          "name": "first-test-fixtures",
+          "version": "1.0"
+        }
+      ]
+    },
+    {
+      "name": "testFixturesRuntimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "test",
+          "module": "first",
+          "version": {
+            "requires": "1.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "first-1.0-test-fixtures.jar",
+          "url": "first-1.0-test-fixtures.jar",
+          "size": 538,
+          "sha1": "d8b5a0fc88274e6c83b12bcc02d4b60ee186879b",
+          "md5": "4191fe48b25cb2b3b4fa7030e1551694"
+        }
+      ],
+      "capabilities": [
+        {
+          "group": "test",
+          "name": "first-test-fixtures",
+          "version": "1.0"
+        }
+      ]
+    }
+  ]
+}
