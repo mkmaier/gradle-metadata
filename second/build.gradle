@@ -1,0 +1,26 @@
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+apply plugin: 'java-test-fixtures'
+
+repositories {
+    mavenLocal()
+}
+
+dependencies {
+    compile testFixtures("test:first:1.0")
+}
+
+group 'test'
+version '1.0'
+publishing {
+    publications {
+        javaComponent(MavenPublication) {
+            artifactId 'second'
+            from components.java
+        }
+    }
+}
+
+wrapper {
+    gradleVersion = '5.6.2'
+}
